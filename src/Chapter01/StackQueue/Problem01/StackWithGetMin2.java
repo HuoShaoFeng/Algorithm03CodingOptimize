@@ -1,4 +1,4 @@
-package Chapter01.StackQueue;
+package Chapter01.StackQueue.Problem01;
 
 import java.util.Stack;
 
