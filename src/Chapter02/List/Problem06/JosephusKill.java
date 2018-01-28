@@ -16,7 +16,7 @@ public class JosephusKill {
 //        System.out.println("left : " + left.data);
 
         Node left1 = getTheLastNode1(n1,m);
-//        System.out.println("left1 : " + left1.data);
+        System.out.println("left1 : " + left1.data);
     }
 
 
@@ -56,7 +56,6 @@ public class JosephusKill {
             count++;
             tmp=tmp.next;
         }
-        System.out.println("count =" +count);
 
 //        int lastIndex=0;
 //        for (int i = 2; i <= count; i++) {
@@ -65,10 +64,11 @@ public class JosephusKill {
 
         int lastIndex = getLive(count,m);
 
-        System.out.println("lastIndex = "+lastIndex);
+        while (--lastIndex!=0){
+            head = head.next;
+        }
 
-
-        return null;
+        return head;
     }
 
     private static int getLive(int count, int m) {
